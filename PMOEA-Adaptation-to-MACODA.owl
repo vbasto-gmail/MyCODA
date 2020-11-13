@@ -206,6 +206,7 @@ Declaration(NamedIndividual(PMOEA:Lily_Rachmawati))
 Declaration(NamedIndividual(PMOEA:Luis_V._Santana))
 Declaration(NamedIndividual(PMOEA:Mariano_Luque))
 Declaration(NamedIndividual(PMOEA:Markus_Olhofer))
+Declaration(NamedIndividual(PMOEA:MathLab))
 Declaration(NamedIndividual(PMOEA:NIMBUS))
 Declaration(NamedIndividual(PMOEA:NOSGA))
 Declaration(NamedIndividual(PMOEA:NOSGA-II))
@@ -1809,6 +1810,10 @@ ClassAssertion(PMOEA:OWLClass_9598b33d_f57f_4f27_942e_fa47ade955e3 PMOEA:Mariano
 
 AnnotationAssertion(rdfs:label PMOEA:Markus_Olhofer "Markus Olhofer")
 ClassAssertion(PMOEA:OWLClass_9598b33d_f57f_4f27_942e_fa47ade955e3 PMOEA:Markus_Olhofer)
+
+# Individual: PMOEA:MathLab (PMOEA:MathLab)
+
+ClassAssertion(PMOEA:OWLClass_cccfbe7c_e1d1_4a2d_8022_5603a6e0257b PMOEA:MathLab)
 
 # Individual: PMOEA:NIMBUS (PMOEA:NIMBUS)
 
