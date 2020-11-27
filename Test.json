@@ -1,2 +1,2 @@
-[ { "name": "Metaheuristic", "type": "Class", {"name": "Problem", "type": "Class"}, ]
+[ {"name": "Metaheuristic", "type": "Class"}, {"name": "Problem", "type": "Class"}, ]
 
