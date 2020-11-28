@@ -1,6 +1,4 @@
-[
-			{"name":"Metaheuristic", "type":"Class"},
-			{"name":"MultiobjectiveOptimizationProblem", "type":"Class"},
+[{"name":"Metaheuristic", "type":"Class"}, {"name":"MultiobjectiveOptimizationProblem", "type":"Class"},
 			{"name":"SelectionOperator", "type":"Class"},
 			{"name":"hasPublicationYear", "type":"Object Property"},
 			{"name":"hasSelectionOperator", "type":"Object Property"},
@@ -8,6 +6,5 @@
 			{"name":"isEvolutionaryAlgorithm", "type":"Data Property"},
 			{"name":"NSGA-II", "type":"Individual"},
 			{"name":"NSGA-III", "type":"Individual"},
-			{"name":"SMS-EMOA", "type":"Individual"},
-]
+			{"name":"SMS-EMOA", "type":"Individual"}, ]
 
