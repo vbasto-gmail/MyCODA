@@ -510,7 +510,7 @@
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_1f63fe14_b204_48f7_86aa_ab0dc1a595d5 -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_1f63fe14_b204_48f7_86aa_ab0dc1a595d5">
-        <rdfs:comment>Result of the method,  range or distribution or only one solution</rdfs:comment>
+        <rdfs:comment>Result of the method,  range or distribution or only one Solution</rdfs:comment>
         <rdfs:label xml:lang="en">ResultInfluence</rdfs:label>
     </owl:Class>
     
