@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.semanticweb.org/longmeili/ontologies/PMO#"
      xml:base="http://www.semanticweb.org/longmeili/ontologies/PMO"
-     xmlns:PEMO="http://www.semanticweb.org/longmeili/ontologies/PEMO#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:PMOEA="http://www.semanticweb.org/longmeili/ontologies/PMOEA#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:PEMO="http://www.semanticweb.org/longmeili/ontologies/PEMO#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:PMOEA="http://www.semanticweb.org/longmeili/ontologies/PMOEA#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA"/>
     
 
@@ -187,6 +187,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#discussedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#discussedIn">
+        <rdfs:comment>The topic is discussed in a bibliographic reference.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -356,6 +364,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#hasHeterogeneousConstraints -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#hasHeterogeneousConstraints">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_dc777a2b_5b14_4674_ba36_f1f9e90da118"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Constraint function components of a problem that differ in complexity, latency, uncertainty, domain type, co-domain type, black box vs analytically known, or in other ways that might affect search.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#hasHeterogeneousObjectives -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#hasHeterogeneousObjectives">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_dc777a2b_5b14_4674_ba36_f1f9e90da118"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Objective function components of a problem that differ in complexity, latency, uncertainty, domain type, co-domain type, black box vs analytically known, or in other ways that might affect search.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -367,10 +395,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#AsynchronousEA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#AsynchronousEA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Parallelisation"/>
+        <rdfs:comment>Evolutionary algorithms that work on parallel architectures supporting asynchronous solution evaluations, selection and search operators.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#Constraints -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Constraints">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_c348cf8a_5c0c_4357_88df_a599f3fb173b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#HeterogeneousObjectives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#HeterogeneousObjectives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_dc777a2b_5b14_4674_ba36_f1f9e90da118"/>
+        <rdfs:comment>Objective function components of a problem that differ in complexity, latency, uncertainty, domain type, co-domain type, black box vs analytically known, or in other ways that might affect search.</rdfs:comment>
     </owl:Class>
     
 
@@ -1192,11 +1238,25 @@
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#Parallelisation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Parallelisation">
+        <rdfs:comment>Algorithm&apos;s schemes used for parallelisation and interleaving evaluations</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#PreferencePoint -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#PreferencePoint">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_64cce782_d75b_4552_8420_db5dea08fa41"/>
     </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Publication"/>
     
 
 
@@ -7699,6 +7759,15 @@ based multi-objective optimization using evolutionary algorithms. International 
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#chapAllmendingerKnowles21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#chapAllmendingerKnowles21">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Publication"/>
+        <rdfs:comment>Richard Allmendinger (lead), Joshua Knowles: Heterogenous Objectives: In Many Criteria Optimization and Decision Analysis, D. Brockhoff, M. Emmerich, B. Naujoks, R. Purshouse (editors). Springer, (to be published)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#constraints -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#constraints">
@@ -7733,6 +7802,15 @@ based multi-objective optimization using evolutionary algorithms. International 
         <PMOEA:OWLDataProperty_de900583_e7eb_4ee9_9849_7567040b7aae>Molina, J., L. V. Santana, A. G. Hernández-Díaz, C. A. C. Coello and R. Caballero (2009). &quot;g-dominance: Reference point based dominance for multiobjective metaheuristics.&quot; European Journal of Operational Research 197(2): 685-692</PMOEA:OWLDataProperty_de900583_e7eb_4ee9_9849_7567040b7aae>
         <rdfs:comment>In this paper, a new dominance relation called g-dominance is suggested based on a reference point. In the new relation, objective vectors satisfying all the aspiration values and objective vectors fulfilling none of them are preferred over objective vectors satisfying some of the aspiration levels. The main advantage of the g-dominance is that it can be incorporated in any metaheuristic algorithm, given that it does not modify the architecture of the algorithm. However, the g-dominance does not preserve the Pareto dominance</rdfs:comment>
         <rdfs:label>g-NSGA-II</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#generalHeterogeneousObjectives -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#generalHeterogeneousObjectives">
+        <rdf:type rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#HeterogeneousObjectives"/>
+        <PMOEA:discussedIn rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#chapAllmendingerKnowles21"/>
     </owl:NamedIndividual>
     
 
@@ -7997,5 +8075,5 @@ based multi-objective optimization using evolutionary algorithms. International 
 
 
 
-<!-- Generated by the OWL API (version 4.1.3.20151118-2017) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
