@@ -7805,7 +7805,7 @@ based multi-objective optimization using evolutionary algorithms. International 
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#chapAllmendingerKnowles21">
         <rdf:type rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Publication"/>
-        <rdfs:comment>Richard Allmendinger (lead), Joshua Knowles: Heterogenous Objectives: In Many Criteria Optimization and Decision Analysis, D. Brockhoff, M. Emmerich, B. Naujoks, R. Purshouse (editors). Springer, (to be published)</rdfs:comment>
+        <rdfs:comment>Richard Allmendinger (lead), Joshua Knowles: Heterogenous Objectives: In Many Criteria Optimization & Decision Analysis, D. Brockhoff, M. Emmerich, B. Naujoks, R. Purshouse (editors). Springer, (to be published)</rdfs:comment>
     </owl:NamedIndividual>
     
 
