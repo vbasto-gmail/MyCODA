@@ -395,6 +395,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#AlphaDominance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#AlphaDominance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OrderRelation"/>
+        <rdfs:comment>Dominance relation considering trade-off between objectives to prevent dominance resistant points</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#AsynchronousEA -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#AsynchronousEA">
@@ -408,6 +417,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Constraints">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OWLClass_c348cf8a_5c0c_4357_88df_a599f3fb173b"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#EdgeRotatedConeOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#EdgeRotatedConeOrder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OrderRelation"/>
+        <rdfs:comment>Dominance relation with parameter epsilon. used in the componentwise comparison to increase/decrease the coordinates of one of the solutions.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#FavourRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#FavourRelation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OrderRelation"/>
+        <rdfs:comment>Order relation proposed for many objective optimization. This in-transitive relation counts in how many objectives one solution is better than another solution.</rdfs:comment>
     </owl:Class>
     
 
@@ -1229,6 +1256,12 @@
     
 
 
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#OrderRelation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OrderRelation"/>
+    
+
+
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#OutrankingParameters -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OutrankingParameters">
@@ -1257,6 +1290,15 @@
     <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#Publication -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#Publication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/longmeili/ontologies/PMOEA#k-Dominance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/longmeili/ontologies/PMOEA#k-Dominance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/longmeili/ontologies/PMOEA#OrderRelation"/>
+        <rdfs:comment>Also (1-k)-dominance. Dominance relation based on counting results of component-wise comparisons. Not transitive.</rdfs:comment>
+    </owl:Class>
     
 
 
